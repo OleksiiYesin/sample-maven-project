@@ -14,7 +14,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn compile
+      run: mvn deploy
     - name: Nexus Repo Publish
       uses: sonatype-nexus-community/nexus-repo-github-action@master
       with:
@@ -22,7 +22,7 @@ jobs:
         username: admin
         password: Bdfyjdbx21
         format: maven2
-        repository: maven-releases
-        coordinates: groupId=flipkart artifactId=offers version=1.1
-        assets: extension=jar
-        filename: /target/offers-1.1.jar
+        repository: maven-snapshots
+        coordinates: groupId=maven artifactId=snap version=1.0.0-SNAPSHOT
+        assets: extension=pom
+        filename: target/snap-1.0.0-SNAPSHOT.pom
