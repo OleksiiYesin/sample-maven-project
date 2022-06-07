@@ -27,7 +27,7 @@
       <repository>
           <id>central</id>
           <name>maven-release</name>
-          <url>http://52.12.46.141:8081/repository/maven-release</url>
+          <url>http://52.12.46.141:8081/artifactory/libs-release-local</url>
       </repository>
   </distributionManagement>
 
