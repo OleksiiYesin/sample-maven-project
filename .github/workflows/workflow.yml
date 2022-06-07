@@ -15,4 +15,5 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       uses: xlui/action-maven-cli@master
-      run: mvn package
+      with:
+        lifecycle: 'mvn package'
