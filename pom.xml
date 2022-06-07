@@ -24,11 +24,11 @@
   </dependencies>
 
   <distributionManagement>
-      <repository>
+      <snapshotRepository>
           <id>central</id>
-          <name>maven-release</name>
-          <url>http://192.168.0.107:8081/repository/maven-public/</url>
-      </repository>
+          <name>maven-snapshot</name>
+          <url>http://52.12.46.141:8081/repository/maven-snapshots</url>
+      </snapshotRepository>
   </distributionManagement>
 
 </project>
