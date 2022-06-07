@@ -14,15 +14,4 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Maven
-      run: mvn deploy
-    - name: Nexus Repo Publish
-      uses: sonatype-nexus-community/nexus-repo-github-action@master
-      with:
-        serverUrl: http://52.12.46.141:8081
-        username: admin
-        password: Bdfyjdbx21
-        format: maven2
-        repository: maven-snapshots
-        coordinates: groupId=maven artifactId=snap version=1.0.0-SNAPSHOT
-        assets: extension=pom
-        filename: target/snap-1.0.0-SNAPSHOT.pom
+      run: mvn compile
