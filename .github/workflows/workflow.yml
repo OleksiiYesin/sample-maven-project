@@ -25,4 +25,4 @@ jobs:
         repository: maven-snapshot
         coordinates: groupId=flipkart artifactId=offers version=1.1-release
         assets: extension=jar
-        filename: ./target/app-1.1-snapshot.jar
+        filename: ./target/offers-1.1.jar
